@@ -58,8 +58,7 @@ Feel free to open issues or pull requests.
 
 ## License
 
-Free for all
-
+Open Source
 
 
 
