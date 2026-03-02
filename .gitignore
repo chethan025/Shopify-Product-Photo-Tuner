@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg
+*.egg-info/
+*.swp
+
+# Virtual environment
+venv/
+.env
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Distribution
+build/
+dist/
+*.whl
+
+# Processor models or data
+processor/BiRefNet/
+
+# Shopify credentials
+shopify/*.json
