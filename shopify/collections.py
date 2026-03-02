@@ -15,7 +15,7 @@ def get_collections():
 
 def get_products_by_collection(collection_id):
     products = []
-    endpoint = f"products.json?collection_id={collection_id}&limit=5"
+    endpoint = f"products.json?collection_id={collection_id}&limit=50"
 
     while endpoint:
         print("Requesting:", endpoint)

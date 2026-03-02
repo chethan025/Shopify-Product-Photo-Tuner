@@ -34,7 +34,7 @@ def main():
 
     print("\nStarting full product processing...\n")
 
-    for product in products[:2]:
+    for product in products[:20]:
         product_id = product["id"]
         handle = product["handle"]
 
