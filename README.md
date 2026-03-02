@@ -5,13 +5,22 @@ It downloads product images, removes backgrounds using a BiRefNet model, and upl
 
 ## Project Structure
 
-- `processor/` - modules for downloading and background removal using BiRefNet.
+- `processor/` - modules for downloading and background removal using BiRefNet. Clone the official repo into this folder for model code and weights.
 - `shopify/` - client utilities for interacting with Shopify APIs.
 - `tests/` - unit tests.
 - `main.py` - entry point for orchestrating the pipeline.
 - `config.py` - configuration settings.
 
 ## Setup
+
+Before installing dependencies, clone the BiRefNet repository into `processor/`:
+
+```bash
+cd processor
+git clone https://huggingface.co/ZhengPeng7/BiRefNet/ BiRefNet
+cd ..
+```
+
 
 ```bash
 python -m venv venv
