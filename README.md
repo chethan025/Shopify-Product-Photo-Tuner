@@ -1,4 +1,4 @@
-# Xagon Background Pipeline
+# Shopify Product Photo Tuner
 
 A Python-based pipeline tailored for Shopify merchants.
 It downloads product images, removes backgrounds using a BiRefNet model, and uploads or manages them via Shopify collections and APIs.
@@ -13,6 +13,8 @@ It downloads product images, removes backgrounds using a BiRefNet model, and upl
 
 ## Setup
 
+### Clone model repository
+
 Before installing dependencies, clone the BiRefNet repository into `processor/`:
 
 ```bash
@@ -21,12 +23,26 @@ git clone https://huggingface.co/ZhengPeng7/BiRefNet/ BiRefNet
 cd ..
 ```
 
+### Python environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+
+### Environment variables
+
+Create a `.env` file (or export variables directly) with the following format to configure Shopify API access and any other secrets:
+
+```
+SHOP=xxxxxx.myshopify.com
+TOKEN=xxxxxxxxxxxxxxxxxxxxx
+API_VERSION=2024-01
+REQUEST_DELAY=0.6
+```
+
+The application reads these values via `config.py` or a library like `python-dotenv`.
 
 ## Usage
 
